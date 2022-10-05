@@ -1,0 +1,61 @@
+/* COMMON */
+html{
+    font-size: 100%;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+}
+
+/* Variables */
+:root{
+    /* Palette */
+    --ms_grey: #d6d6d6;
+}
+
+/* Hamburger menu */
+.hamburger{
+    display: block;
+    width: 20px;
+    height: 50px;
+    position: relative;
+}
+
+.hamburger::after,
+.hamburger::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: var(--ms_grey);
+    position: absolute;
+    transform: translateX(-50%);
+}
+
+.hamburger::before{
+    top: 35%;
+    left: 50%;
+}
+
+.hamburger::after{
+    bottom: 35%;
+    left: 50%;
+}
+
+/* HEADER */
+header{
+    background-color:#000c;
+    color: var(--ms_grey);
+}
+
+.ms_header-navbar ul li a{
+    text-decoration: none;
+    color: inherit;
+    font-size: .8rem;
+}
