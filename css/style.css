@@ -17,9 +17,20 @@ ul{
 :root{
     /* Palette */
     --ms_grey: #d6d6d6;
+    --ms_black: #000000;
+    --ms_white: #fbfbfd;
 
     /* Height */
-    --content-height: 500px;
+    --section-jumbo-height: 500px;
+}
+
+/* Background */
+.ms_bg-black{
+    background-color: var(--ms_black);
+}
+
+.ms_bg-white{
+    background-color: var(--ms_white);
 }
 
 /* Font size */
@@ -29,6 +40,7 @@ ul{
 
 .ms_fs-2{
     font-size: calc(1rem + 2vw);
+    font-weight: 100;
 }
 
 /* Hamburger menu */
@@ -73,13 +85,9 @@ header{
 }
 
 /* MAIN */
-#jumbotron{
-    background-color: black;
-    padding-top: 2em;
-}
-
+/* Section Iphone 14 Pro */
 #jumbotron .container{
-    height: var(--content-height);
+    height: var(--section-jumbo-height);
     position: relative;
     overflow: hidden;
 }
@@ -108,3 +116,4 @@ header{
 }
 
 
+/* Section Iphone 14 */

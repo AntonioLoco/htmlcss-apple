@@ -3,7 +3,7 @@
     /* Variables */
     :root{
         /* Height */
-        --content-height: 650px;
+        --section-jumbo-height: 650px;
     }
 }
 
@@ -12,6 +12,20 @@
     /* Variables */
     :root{
         /* Height */
-        --content-height: 692px;
+        --section-jumbo-height: 692px;
     }
 }
+
+/* Screen xl 1200px*/
+@media screen and (min-width: 1200px){
+    /* Variables */
+    :root{
+        /* Height */
+        --section-jumbo-height: 692px;
+    }
+
+    #jumbotron .container{
+        max-width: 900px;
+    }
+}
+
