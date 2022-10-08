@@ -12,7 +12,8 @@
     /* Variables */
     :root{
         /* Height */
-        --section-jumbo-height: 692px;
+        /* --section-jumbo-height: 692px; */
+        --section-jumbo-height: 600px;
     }
 }
 
@@ -22,6 +23,11 @@
     :root{
         /* Height */
         --section-jumbo-height: 692px;
+    }
+
+    /* Layout */
+    header .container-lg{
+        max-width: 950px;
     }
 
     #jumbotron .container{

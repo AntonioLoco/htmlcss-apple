@@ -35,11 +35,16 @@ ul{
 
 /* Font size */
 .ms_fs-1{
-    font-size: calc(2rem + 2vw);
+    font-size: calc(1.5rem + 1vw);
 }
 
 .ms_fs-2{
-    font-size: calc(1rem + 2vw);
+    font-size: calc(1rem + 1vw);
+    font-weight: 100;
+}
+
+.ms_fs-3{
+    font-size: calc(.5rem + 1vw);
     font-weight: 100;
 }
 
@@ -86,7 +91,9 @@ header{
 
 /* MAIN */
 /* Section Iphone 14 Pro */
-#jumbotron .container{
+#jumbotron .container,
+#jumbotron .container-xl,
+#jumbotron .container-fluid{
     height: var(--section-jumbo-height);
     position: relative;
     overflow: hidden;
@@ -115,5 +122,7 @@ header{
     object-fit: cover;
 }
 
-
-/* Section Iphone 14 */
+/* Section Apple Watch */
+.logo-watch{
+    width: 20%;
+}
