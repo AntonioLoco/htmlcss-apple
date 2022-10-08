@@ -1,3 +1,13 @@
+/* Screen 0 to sm  */
+@media screen and (max-width: 767px){
+    /* MAIN */
+    /* Section Promo List */
+    #promo-list .container-fluid{
+        padding: 0;
+        overflow: hidden;
+    }
+}
+
 /* Screen md 768px */
 @media screen and (min-width: 768px) {
     /* Variables */
