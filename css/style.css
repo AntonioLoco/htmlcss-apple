@@ -64,18 +64,96 @@ ul{
     height: 2px;
     background-color: var(--ms_grey);
     position: absolute;
-    transform: translateX(-50%);
+    transition: transform .5s linear;
 }
 
 .hamburger::before{
     top: 35%;
-    left: 50%;
 }
 
 .hamburger::after{
-    bottom: 35%;
-    left: 50%;
+    top: 55%;
 }
+
+/* Hamburger menu Open*/
+.container-lg.hamburger-menu-open{
+    background-color: var(--ms_black);
+    overflow: hidden;
+    height: 100vh;
+    animation: menuOpen .5s linear;
+}
+
+@keyframes menuOpen {
+    from{
+        height: 0vh;
+    }
+    to{
+        height: 100vh;
+    }
+}
+
+/* Button close menu */
+.container-lg.hamburger-menu-open .hamburger::after{
+    transform: rotate(135deg)!important;
+    top: 50%;
+}
+
+.container-lg.hamburger-menu-open .hamburger::before{
+    transform: rotate(45deg)!important;
+    top: 50%;
+}
+
+/* Content menu*/
+.hamburger-menu-open .ms_header-navbar .hamburger-content,
+.hamburger-menu-open .hamburger-content li:first-child .search-bar-menu{
+    display: block!important;
+}
+
+.hamburger-menu-open .hamburger-content li:first-child a,
+.hamburger-menu-open .hamburger-content li:last-child,
+.hamburger-menu-open .hamburger-content li:nth-child(12){
+    display: none;
+}
+
+.hamburger-menu-open .hamburger-content li{
+    padding: 1em 2.5em;
+    color: grey;
+}
+
+.hamburger-menu-open .hamburger-content li:first-child{
+    padding-bottom: .5em;
+    border-bottom: 1px solid grey;
+}
+
+.hamburger-menu-open .hamburger-content li:first-child #search-hamburger{
+    width: 100%;
+    padding: .5em 1em;
+    border: none;
+    border-radius: 10px;
+    background-color: #1d1d1f;
+}
+
+.hamburger-menu-open .hamburger-content li:first-child .search-bar-menu{
+    position: relative;
+}
+
+.hamburger-menu-open .hamburger-content li:first-child .search-bar-menu label{
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    left: 10px;
+}
+
+.hamburger-menu-open .hamburger-content li:first-child #search-hamburger:focus-visible{
+    outline: none;
+}
+
+.hamburger-menu-open .hamburger-content li a{
+    display: block;
+    padding-bottom: .5em;
+    border-bottom: 1px solid grey;
+}
+
 
 /* HEADER */
 header{

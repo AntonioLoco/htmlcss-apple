@@ -21,15 +21,21 @@
 <body>
     <!-- Header -->
     <header class="fixed-top">
-        <div class="container-lg">
+        <div class="container-lg" id="header-menu">
             <nav class="ms_header-navbar row">
               <ul class="col-12 d-flex justify-content-between align-items-center d-lg-none">
-                <li><div class="hamburger"></div></li>
+                <li><div class="hamburger" id="hamburger-button"></div></li>
                 <li><a href=""><img src="img/globalnav_apple_image__b5er5ngrzxqq_large.svg" alt="Apple Logo"></a></li>
                 <li><a href=""><img src="img/shop-bag.svg" alt="Shop bag"></a></li>
               </ul> 
-              <ul class="col-12 d-none d-lg-flex justify-content-between align-items-center">
-                <li><a href=""><img src="img/globalnav_apple_image__b5er5ngrzxqq_large.svg" alt="Logo Apple"></a></li>
+              <ul class="col-12 d-none hamburger-content d-lg-flex justify-content-between align-items-center">
+                <li>
+                  <a href=""><img src="img/globalnav_apple_image__b5er5ngrzxqq_large.svg" alt="Logo Apple"></a>
+                  <div class="search-bar-menu d-none">
+                    <label for="search-hamburger"><i class="fa-solid fa-magnifying-glass"></i> Cerca su apple.com</label>
+                    <input type="text" name="" id="search-hamburger">
+                  </div>
+                </li>
                 <li><a href="">Store</a></li>
                 <li><a href="">Mac</a></li>
                 <li><a href="">iPad</a></li>
@@ -54,7 +60,7 @@
       <section id="jumbotron" class="ms_bg-black pt-5">
         <div class="container">
           <div class="section-title">
-            <h1 class="ms_fs-1">Iphone 14 Pro</h1>
+            <h1 class="ms_fs-1">iPhone 14 Pro</h1>
             <h2 class="ms_fs-2">Pro.E oltre.</h2>
             <a href="">Scopri di più <i class="fa-solid fa-chevron-right"></i></a>
             <a href="">Acquista <i class="fa-solid fa-chevron-right"></i></a>
@@ -201,5 +207,8 @@
     <!-- Footer -->
     <footer></footer>
     <!-- /Footer -->
+
+    <!-- Script -->
+    <script src="js/script.js"></script>
 </body>
 </html>
